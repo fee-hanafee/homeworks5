@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("./pic/thaifood.jpg");
+  background-position: 25%;
+  transition: 2s;
+  background-repeat: no-repeat;
+}
+.container {
+  height: 100vh;
+  font-family: "Courier New", Courier, monospace;
+  display: relative;
+}
+.container_inside {
+  width: 80%;
+  margin: auto;
+  height: 100vh;
+}
+
+.home {
+  text-align: end;
+
+  height: 100px;
+  padding-top: 30px;
+  padding-right: 5%;
+  color: white;
+  text-shadow: 1px 1px 2px silver;
+}
+.content_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin: auto;
+  height: 80vh;
+  text-shadow: 1px 1px 3px black;
+  color: white;
+}
+.download {
+  margin: 12px 0px;
+  height: 80px;
+  width: 60%;
+
+  display: flex;
+  flex-direction: column;
+}
+.load {
+  width: 100%;
+  height: 30px;
+  background-color: white;
+  border-radius: px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.19), 0px 6px 6px rgba(0, 0, 0, 0.23);
+}
+.loadding {
+  height: 100%;
+  width: 60%;
+  background: rgb(24, 54, 161);
+  background: linear-gradient(
+    90deg,
+    rgba(24, 54, 161, 1) 58%,
+    rgba(0, 159, 244, 1) 100%
+  );
+}
+.textload {
+  display: flex;
+  justify-content: space-between;
+}
+footer {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 3px black;
+
+  border-top: 1px solid silver;
+}
+.icon {
+  padding: 8px;
+}
+.icon i:hover {
+  color: red;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.loadding:hover{
+  width: 100%;
+  transition: 18s;
+}
+.home *:hover {
+  cursor: pointer;
+  color: red;
+  transition: 0.4s;
+  text-shadow: 1px 1px 2px silver;
+}
+/* media */
+@media (max-width: 800px) {
+  .container_inside {
+    width: 100%;
+  }
+  .download {
+    width: 70%;
+  }
+  body {
+    background-position: 90%;
+    transition: 2s;
+  }
+}
