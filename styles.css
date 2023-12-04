@@ -5,7 +5,7 @@
 }
 body {
   background-image: url("./pic/thaifood.jpg");
-  background-position: 25%;
+  background-position: center;
   transition: 2s;
   background-repeat: no-repeat;
 }
@@ -15,9 +15,10 @@ body {
   display: relative;
 }
 .container_inside {
+  max-width: 2000px;
   width: 80%;
   margin: auto;
-  height: 100vh;
+  height: 100%;
 }
 
 .home {
@@ -97,15 +98,22 @@ footer {
   text-shadow: 1px 1px 2px silver;
 }
 /* media */
-@media (max-width: 800px) {
+@media (max-width: 700px) {
+   body {
+    background-position: 80%;
+    transition: 2s;
+   }
   .container_inside {
     width: 100%;
   }
   .download {
     width: 70%;
   }
+  
+}
+@media (max-width: 500px) {
   body {
-    background-position: 90%;
+    background-position: 55%;
     transition: 2s;
   }
 }
